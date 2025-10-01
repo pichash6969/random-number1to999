@@ -1,43 +1,240 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Lottery Master Game</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚀 Advanced Professional Lottery Game Roadmap</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; color: #333; }
+  h1, h2 { text-align: center; margin-bottom: 20px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 40px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+  th, td { padding: 12px; border: 1px solid #ccc; text-align: left; vertical-align: top; }
+  th { background-color: #333; color: #fff; }
+  tr.core { background-color: #d0e7ff; }
+  tr.optional { background-color: #d0ffd6; }
+  td.backend { color: #e67e22; font-weight: bold; }
+  td.frontend { color: #8e44ad; font-weight: bold; }
+  td.security { color: #c0392b; font-weight: bold; }
+  td.devops { color: #7f8c8d; font-weight: bold; }
+  td.monitoring { color: #16a085; font-weight: bold; }
+  tr:hover { background-color: #f1f1f1; }
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr { display: block; }
+    th { position: sticky; top: 0; }
+    td { padding-left: 50%; position: relative; }
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+  }
+</style>
 </head>
 <body>
-  <main id="app">
-    <header>
-      <h1>Lottery Master</h1>
-      <div id="balance">Balance: <span id="balance-amount">--</span></div>
-    </header>
 
-    <section id="timer">
-      <div id="countdown">Loading timer...</div>
-    </section>
+<h1>🚀 Advanced Professional Lottery Game Roadmap</h1>
+<h2>Core Topics (15)</h2>
+<table>
+  <tr>
+    <th>Code Area / Language</th>
+    <th>Topic Title</th>
+    <th>Relevant Languages / Technologies</th>
+    <th>Purpose / Use</th>
+  </tr>
+  <tr class="core">
+    <td class="frontend" data-label="Code Area / Language">JS (ES6+), Laravel Echo, Pusher</td>
+    <td data-label="Topic Title">Real-Time WebSocket Updates for Lottery</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / JS</td>
+    <td data-label="Purpose / Use">Users को instant lottery results और countdown timers दिखाने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel), JSON Web Tokens</td>
+    <td data-label="Topic Title">JWT Authentication & Multi-Device Login</td>
+    <td data-label="Relevant Languages / Technologies">Backend / PHP</td>
+    <td data-label="Purpose / Use">Secure login, session management और multi-device access।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel Queues), Redis / DB Queue</td>
+    <td data-label="Topic Title">Laravel Queue Jobs for Async Tasks</td>
+    <td data-label="Relevant Languages / Technologies">Backend / PHP + Redis</td>
+    <td data-label="Purpose / Use">Notifications, emails और heavy tasks asynchronously run करने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel), Laravel Telescope, Sentry</td>
+    <td data-label="Topic Title">Error Logging & Monitoring</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Monitoring</td>
+    <td data-label="Purpose / Use">Application errors और user activity logs monitor करना।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">MySQL / SQL, Laravel Eloquent</td>
+    <td data-label="Topic Title">Advanced DB Optimization</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Database</td>
+    <td data-label="Purpose / Use">High-volume bets और large user base के लिए database fast और efficient रखना।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel), MySQL / SQL</td>
+    <td data-label="Topic Title">Audit Logging for Bets & Payouts</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Database</td>
+    <td data-label="Purpose / Use">Users और financial transactions track करना, disputes avoid करना।</td>
+  </tr>
+  <tr class="core">
+    <td class="security" data-label="Code Area / Language">PHP (Laravel), JS</td>
+    <td data-label="Topic Title">2FA & Input Sanitization</td>
+    <td data-label="Relevant Languages / Technologies">Security</td>
+    <td data-label="Purpose / Use">Account security बढ़ाने और malicious input रोकने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHPUnit</td>
+    <td data-label="Topic Title">Unit & Integration Testing</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Testing</td>
+    <td data-label="Purpose / Use">Bugs detect करने और application stable रखने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="devops" data-label="Code Area / Language">YAML, GitHub Actions</td>
+    <td data-label="Topic Title">CI/CD Pipeline</td>
+    <td data-label="Relevant Languages / Technologies">DevOps / Automation</td>
+    <td data-label="Purpose / Use">Automatic testing और deployment maintain करने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="monitoring" data-label="Code Area / Language">Laravel Telescope, Grafana / Prometheus</td>
+    <td data-label="Topic Title">Application Monitoring & Analytics</td>
+    <td data-label="Relevant Languages / Technologies">Monitoring / Analytics</td>
+    <td data-label="Purpose / Use">Real-time server और application performance track करने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="devops" data-label="Code Area / Language">Bash / Cron</td>
+    <td data-label="Topic Title">Database Backup & Recovery</td>
+    <td data-label="Relevant Languages / Technologies">DevOps / Backup</td>
+    <td data-label="Purpose / Use">Data loss रोकने और restore mechanism ensure करने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="devops" data-label="Code Area / Language">Linux, Nginx / Apache</td>
+    <td data-label="Topic Title">Scaling & Load Management</td>
+    <td data-label="Relevant Languages / Technologies">DevOps / Server</td>
+    <td data-label="Purpose / Use">High traffic handle करने के लिए horizontal/vertical scaling।</td>
+  </tr>
+  <tr class="core">
+    <td class="frontend" data-label="Code Area / Language">HTML5, CSS3, JS, TailwindCSS / Bootstrap</td>
+    <td data-label="Topic Title">Professional UI/UX Design</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / UI</td>
+    <td data-label="Purpose / Use">Attractive, responsive और mobile-first user interface।</td>
+  </tr>
+  <tr class="core">
+    <td class="frontend" data-label="Code Area / Language">JS (Chart.js / Recharts), PHP (Laravel API)</td>
+    <td data-label="Topic Title">Admin Dashboard & Analytics</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / Backend</td>
+    <td data-label="Purpose / Use">Admin को betting trends, payout summary और stats दिखाने के लिए।</td>
+  </tr>
+  <tr class="core">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel), MySQL, JS</td>
+    <td data-label="Topic Title">Multi-Currency / Virtual Coin Bets</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Frontend</td>
+    <td data-label="Purpose / Use">Users को virtual currency में bets place करने के लिए।</td>
+  </tr>
+</table>
 
-    <section id="bet-form">
-      <h2>Place Bet</h2>
-      <form id="placeBetForm">
-        <label>Number (0-9999)
-          <input type="number" id="bet-number" min="0" max="9999" required>
-        </label>
-        <label>Amount
-          <input type="number" id="bet-amount" min="1" required>
-        </label>
-        <button type="submit">Place Bet</button>
-      </form>
-      <div id="bet-feedback"></div>
-    </section>
+<h2>Optional Topics (16)</h2>
+<table>
+  <tr>
+    <th>Code Area / Language</th>
+    <th>Topic Title</th>
+    <th>Relevant Languages / Technologies</th>
+    <th>Purpose / Use</th>
+  </tr>
+  <tr class="optional">
+    <td class="frontend" data-label="Code Area / Language">JS, HTML5, CSS3</td>
+    <td data-label="Topic Title">Progressive Web App (PWA)</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / Web App</td>
+    <td data-label="Purpose / Use">Installable, offline-friendly, mobile-first app।</td>
+  </tr>
+  <tr class="optional">
+    <td class="frontend" data-label="Code Area / Language">HTML5, CSS3, JS</td>
+    <td data-label="Topic Title">Accessibility (a11y)</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / Accessibility</td>
+    <td data-label="Purpose / Use">Screen readers, keyboard navigation और inclusive design।</td>
+  </tr>
+  <tr class="optional">
+    <td class="frontend" data-label="Code Area / Language">JS (Canvas / Framer Motion)</td>
+    <td data-label="Topic Title">Advanced Animations / Particle Effects</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / UX</td>
+    <td data-label="Purpose / Use">Lottery draws को visually engaging और interactive बनाना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel)</td>
+    <td data-label="Topic Title">Advanced Winner Algorithm</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Logic</td>
+    <td data-label="Purpose / Use">Randomness + weighted bets, fairness ensure करना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="security" data-label="Code Area / Language">TOTP / Google Authenticator</td>
+    <td data-label="Topic Title">Two-Factor Authentication (2FA)</td>
+    <td data-label="Relevant Languages / Technologies">Security</td>
+    <td data-label="Purpose / Use">Users accounts secure रखने के लिए।</td>
+  </tr>
+  <tr class="optional">
+    <td class="security" data-label="Code Area / Language">CAPTCHA / Google reCAPTCHA</td>
+    <td data-label="Topic Title">Bot Protection & Form Validation</td>
+    <td data-label="Relevant Languages / Technologies">Security / Frontend</td>
+    <td data-label="Purpose / Use">Fake accounts और automated bots रोकना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="devops" data-label="Code Area / Language">Redis / Memcached</td>
+    <td data-label="Topic Title">Caching High-Traffic Data</td>
+    <td data-label="Relevant Languages / Technologies">Backend / DevOps</td>
+    <td data-label="Purpose / Use">Frequently accessed data fast access के लिए cache।</td>
+  </tr>
+  <tr class="optional">
+    <td class="backend" data-label="Code Area / Language">MySQL / SQL</td>
+    <td data-label="Topic Title">Database Sharding & Archiving</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Database</td>
+    <td data-label="Purpose / Use">Large datasets handle करने और historical data store करने के लिए।</td>
+  </tr>
+  <tr class="optional">
+    <td class="security" data-label="Code Area / Language">PHP / Encryption Libraries</td>
+    <td data-label="Topic Title">Advanced Encryption</td>
+    <td data-label="Relevant Languages / Technologies">Security</td>
+    <td data-label="Purpose / Use">Sensitive user info secure रखना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="security" data-label="Code Area / Language">Security Testing Tools</td>
+    <td data-label="Topic Title">Security Audits / Pen Testing</td>
+    <td data-label="Relevant Languages / Technologies">Security</td>
+    <td data-label="Purpose / Use">Real-world vulnerabilities detect करना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="devops" data-label="Code Area / Language">Linux, Nginx / Apache</td>
+    <td data-label="Topic Title">Server Autoscaling & Load Balancing</td>
+    <td data-label="Relevant Languages / Technologies">DevOps / Server</td>
+    <td data-label="Purpose / Use">Millions of users handle करने के लिए scaling।</td>
+  </tr>
+  <tr class="optional">
+    <td class="devops" data-label="Code Area / Language">Bash / Cron</td>
+    <td data-label="Topic Title">Disaster Recovery Drills</td>
+    <td data-label="Relevant Languages / Technologies">DevOps / Backup</td>
+    <td data-label="Purpose / Use">Backup restore mechanism test और ensure करना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="monitoring" data-label="Code Area / Language">ELK Stack (Elasticsearch, Logstash, Kibana)</td>
+    <td data-label="Topic Title">Log Aggregation & Analytics</td>
+    <td data-label="Relevant Languages / Technologies">Monitoring / Analytics</td>
+    <td data-label="Purpose / Use">Logs centralize करना और errors / trends visualize करना।</td>
+  </tr>
+  <tr class="optional">
+    <td class="frontend" data-label="Code Area / Language">PHP, JS, HTML/CSS</td>
+    <td data-label="Topic Title">Referral / Loyalty / Virtual Items</td>
+    <td data-label="Relevant Languages / Technologies">Frontend / Backend / Gamification</td>
+    <td data-label="Purpose / Use">User engagement बढ़ाने और monetization के लिए।</td>
+  </tr>
+  <tr class="optional">
+    <td class="backend" data-label="Code Area / Language">PHP (Laravel), MySQL</td>
+    <td data-label="Topic Title">Bet Limits & Anti-Fraud</td>
+    <td data-label="Relevant Languages / Technologies">Backend / Security</td>
+    <td data-label="Purpose / Use">Suspicious activity detect करना और bet limits enforce करना।</td>
+  </tr>
+</table>
 
-    <section id="history">
-      <h2>Recent Rounds</h2>
-      <div id="rounds"></div>
-    </section>
-  </main>
-
-  <script src="assets/js/api.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
